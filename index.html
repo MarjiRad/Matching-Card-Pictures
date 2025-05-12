@@ -1,11 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATCHING CARD PICTURES</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/app.js"></script>
 </head>
+
 <body>
+  <section id="gameContainer">
+    <div id="headers">
+        <h1>MATCHING CARD PICTURES</h1>
+    </div>
+    <input type="text" placeholder="name..."/>
+    <div id="buttons">
+        <button id="heart">♥️</button>
+        <button id="club">♣️</button>
+        <button id="diamond">♦️</button>
+        <button id="spade">♠️</button>
+    </div>
+    <div class="overlay-text">
+      Click to Start
+     </div>
+     <div id="game-over-text" class="overlay-text">
+      You Lost
+      <span class="restart">Restart</span>
+     </div>
+     <div id="victory-text" class="overlay-text">
+      You Won
+      <span class="restart">Restart</span>
+   </div>
+  </section>
+
+  <div id="condition">
+    <div id="lives">LIVES: <span id="livesCount">0</span></div>
+     <div id="score">SCORE: <span id="scoreCount">0</span></div>
+    <div id="Time">TIME: <span id="TimeCount">100</span></div>
+   
     
+  </div>
+
+  <div id="game-board">
+    <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/CardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-back card-face">
+         <img class="backside" src="images/back/back-face.png"/>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/suit/cardValue.jpg"/> 
+      </div>
+    </div>
+   </div>
 </body>
+
 </html>
