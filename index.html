@@ -14,6 +14,7 @@
   <section id="gameContainer">
     <div id="headers">
         <h1>MATCHING CARD PICTURES</h1>
+        <h2 id="playerNameDisplay"></h2>
     </div>
     <input type="text" placeholder="name..."/>
     <div id="buttons">
@@ -34,7 +35,7 @@
       <span class="restart">Restart</span>
    </div>
    <div id="condition">
-      <div id="lives">LIVES: <span id="livesCount">6</span></div>
+      <div id="lives">LIVES: <span id="livesCount">10</span></div>
       <div id="score">SCORE: <span id="scoreCount">0</span></div>
       <div id="time">TIME: <span id="timeCount">100</span></div> 
     </div>
@@ -42,13 +43,13 @@
 
   
 
-  <div id="game-board">
+   <div id="game-board">
     <div class="card">
       <div class="card-back card-face">
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src=""/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -56,7 +57,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -64,7 +65,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -72,7 +73,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -80,7 +81,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -88,7 +89,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -96,7 +97,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -104,7 +105,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -112,7 +113,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -120,7 +121,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -128,7 +129,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -136,7 +137,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -144,7 +145,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -152,7 +153,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -160,7 +161,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -168,7 +169,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -176,7 +177,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -184,7 +185,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -192,7 +193,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -200,7 +201,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -208,7 +209,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -216,7 +217,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -224,7 +225,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -232,7 +233,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -240,7 +241,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -248,7 +249,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -256,7 +257,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/>  
       </div>
     </div>
      <div class="card">
@@ -264,7 +265,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -272,7 +273,7 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
      <div class="card">
@@ -280,10 +281,15 @@
          <img class="backside" src="images/back/back-face.png"/>
       </div>
       <div class="card-front card-face">
-        <img class="name" src="images/suit/name.jpg"/> 
+        <img class="card-value" src="images/suit/name.jpg"/> 
       </div>
     </div>
    </div>
 </body>
 
 </html>
+
+<!--  if (!input.value.trim()) {
+                        alert("please enter your name");
+                        return;
+                } -->
