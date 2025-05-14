@@ -24,9 +24,8 @@ Game: Matching card picture
 * If cards are matched the Value of the card will add to the score value, both cards will stay on face side and they will be uncickable
 
 * If the cards are not matched both cards flips to back side after 2 sec clicking  on the second card.
-* If cards aren't matched the value of the life will be subtracted 1.
 
-* If player matched the joker card the value of the life will be added 1 and all cards' face will be appeared for 2 seconds.
+* If cards aren't matched the value of the life will be subtracted 1.
 
 * If Playere click on the Scrap card the value of life will be subtracted 2, and card will stay in face side.
 
@@ -53,3 +52,5 @@ Game: Matching card picture
 ![game page](https://i.imgur.com/KHHnOtk.png)
 
 
+Deploy:
+https://marjirad.github.io/unit-1-Project/
