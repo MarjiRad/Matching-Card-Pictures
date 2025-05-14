@@ -47,4 +47,4 @@ Game: Matching card picture
 
 
 Deploy:
-https://marjirad.github.io/unit-1-Project/
+https://marjirad.github.io/Matching-Card-Pictures/
