@@ -122,7 +122,6 @@ function startCountdown() {
         countdownInterval = setInterval(() => {
          time--;
          timeCount.textContent = time;
-
          if (time <= 0) {
                 clearInterval(countdownInterval);
                 document.getElementById("game-over-text").classList.add("visible");
@@ -156,7 +155,6 @@ function loadBoard(deck) {
 //flip cards rules----------------------------------------------------------------
 function flipCard(event) {
         if (boardLocked) return;
-
         if (!timerStarted) {
                 startCountdown();
                         timerStarted = true;

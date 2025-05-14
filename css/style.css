@@ -29,9 +29,39 @@
   }
  
 
+  h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .instruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .instruction ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+
+  .instruction li {
+    margin: 0;
+    font-size: 18px;
+    
+  }
+
+
   h1 {
     font-size: 40px;
     margin: 10px 0;
+    color: rgb(165, 41, 41);
   }
 
 
